@@ -17,12 +17,4 @@
 	
 	<bean id="applicationUtil" class="com.lwd.test.projectname.biz.utility.ApplicationUtil" />
 
-	<bean id="imageUtil" class="com.lwd.test.projectname.biz.utility.ImageUtil" />
-	
-	<bean id="ConfigUtil" class="com.lwd.test.projectname.biz.utility.ConfigUtil">
-		<property name="cdnHost" value="${image.cdnHost}" />
-		<property name="avatarUrl" value="${avatar.url}" />
-		<property name="env" value="${ENV}" />
-	</bean>
-	
 </beans>

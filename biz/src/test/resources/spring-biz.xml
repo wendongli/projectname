@@ -17,6 +17,4 @@
 	
 	<bean id="applicationUtil" class="com.lwd.test.projectname.biz.utility.ApplicationUtil" />
 
-	<bean id="imageUtil" class="com.lwd.test.projectname.biz.utility.ImageUtil" />
-	
 </beans>
