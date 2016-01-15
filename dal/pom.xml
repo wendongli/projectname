@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<parent>
+		<groupId>com.lwd.test.projectname</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>projectname-dal</artifactId>
+	<name>projectname dal</name>
+	<version>1.0.0</version>
+
+	<properties>
+		<mybatis-version>3.1.1</mybatis-version>
+		<mybatis-spring-version>1.1.1</mybatis-spring-version>
+		<commons-dbcp-version>1.4</commons-dbcp-version>
+		<mysql-connector-java-version>5.1.26</mysql-connector-java-version>
+		<tddl-client-version>5.1.10</tddl-client-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.lwd.test.projectname</groupId>
+			<artifactId>projectname-common</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>${commons-dbcp-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector-java-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.taobao.tddl</groupId>
+			<artifactId>tddl-client</artifactId>
+			<version>${tddl-client-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+  					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+  			<groupId>com.google.guava</groupId>
+  			<artifactId>guava</artifactId>
+  			<version>15.0</version>
+		</dependency>
+	</dependencies>
+</project>
